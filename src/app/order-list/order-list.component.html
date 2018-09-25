@@ -12,11 +12,10 @@
         </tr>
       </thead>
       <tbody *ngFor="let item of listItem">
-        <!-- <div *ngFor="let item of listItem"> -->
         <tr>
           <th scope="row" class="checkbox checkbox-info checkbox-circle" style="text-align: center">
-            <input id="check8" class="styled" type="checkbox" checked>
-              <label for="check8">
+            <input id="{{item.id}}" class="styled" type="checkbox" checked>
+              <label for="{{item.id}}">
               </label>
           </th>
           <td>{{ item.orderno }}</td>
@@ -25,18 +24,12 @@
           <td>{{ item.mobileno }}</td>
           <td>{{ item.status }}</td>
         </tr>
-      
       </tbody>
-
     </table>
     <hr>
     <div class="col-md-12 col-mg-12 col-xs-12 text-center">
-
       <button type="button" class="btn background-cccccc button">Back</button>
-
-
       <button type="button" class="btn background button margin-l">Confirm</button>
     </div>
-  
   </div>
 </div>
