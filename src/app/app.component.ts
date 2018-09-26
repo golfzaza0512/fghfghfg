@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Item } from "./item";
+import { Router, NavigationEnd, Event } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +10,25 @@ import { Item } from "./item";
 })
 export class AppComponent {
 
-  title = 'omni-channel';
+  url = "";
 
-  // listItem = [
-  //   { id: "1", orderno: "999", orderoate: "23/7/18", customername: "Kri", mobileno: "0979494494" , status: "Online"},
-  //   { id: "2", orderno: "9959", orderoate: "23/7/18", customername: "ใคร", mobileno: "0979494494" , status: "Online"},
-  //   { id: "3", orderno: "999", orderoate: "23/7/18", customername: "อะไร", mobileno: "0979494494" , status: "Online"}
-  // ];
+
+
+  constructor(router: Router) {
+
+    router.events.pipe(
+
+      filter((event: Event) => { return event instanceof NavigationEnd })
+
+    ).subscribe(
+
+      (event: NavigationEnd) => {
+
+        this.url = event.url;
+
+      }
+
+    );
+}
+
 }

@@ -1,6 +1,7 @@
+<app-order-stepper></app-order-stepper>
 <div class="row">
-  <div class="col-12" >
-    <table class="table table-hover">
+  <div class="col-10 mx-auto " >
+    <table class="table table-hover table-hover-full">
       <thead>
         <tr class="background">
           <th class="th" scope="col" style="width: 5.5%;">Select</th>
@@ -11,25 +12,27 @@
           <th class="th" scope="col">Status</th>
         </tr>
       </thead>
-      <tbody *ngFor="let item of listItem">
-        <tr>
+      <tbody>
+        <tr *ngFor="let item of cusList">
           <th scope="row" class="checkbox checkbox-info checkbox-circle" style="text-align: center">
-            <input id="{{item.id}}" class="styled" type="checkbox" checked>
-              <label for="{{item.id}}">
+            <input id="{{item.orderNo}}" class="styled" type="checkbox" checked>
+              <label for="{{item.orderNo}}">
               </label>
           </th>
-          <td>{{ item.orderno }}</td>
-          <td>{{ item.orderoate }}</td>
-          <td>{{ item.customername }}</td>
-          <td>{{ item.mobileno }}</td>
-          <td>{{ item.status }}</td>
+          <td>{{item.orderNo }}</td>
+          <td>{{item.orderDate }}</td>
+          <td>{{item.orderCustomerName }}</td>
+          <td>{{item.orderMobileNo }}</td>
+          <td>{{item.status }}</td>
         </tr>
       </tbody>
     </table>
     <hr>
     <div class="col-md-12 col-mg-12 col-xs-12 text-center">
       <button type="button" class="btn background-cccccc button">Back</button>
-      <button type="button" class="btn background button margin-l">Confirm</button>
+      <button type="button" class="btn background button margin-l" routerLink="/orderProfile">Confirm</button>
     </div>
   </div>
+
+
 </div>

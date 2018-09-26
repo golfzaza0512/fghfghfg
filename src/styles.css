@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+.section-title {
+    background-color: #88cf00;
+    color: #FFF;
+    text-align: center;
+    padding: 16px;
+    font-size: 25px;
+    
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar  {
+    background-color: #88cf00;
+    
+}
+
+.mat-tab-link {
+    color: black;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+  
+}
+
+a:hover {
+    color: #000000;
+    text-decoration:none;
+}
+
+.mat-tab-label, .mat-tab-link {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}

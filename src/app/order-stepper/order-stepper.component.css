@@ -11,7 +11,7 @@ position: absolute;
 content: "";
 width: 95%;
 height: 2px;
-background-color: #a1d221;
+background-color: #88cf00;
 left: 4px;
 }
 .steps-form-2 .steps-row-2 .steps-step-2 {
@@ -26,16 +26,16 @@ left: 4px;
 .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
     width: 40px;
 height: 40px;
-border: 2px solid #a1d221;
+border: 2px solid #88cf00;
 background-color: white !important;
-color: #a1d221 !important;
+color: #88cf00 !important;
 border-radius: 50%;
 padding: 6px 0px 0px 0px;
 margin-top: -22px;
 }
 .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2:hover {
-    border: 2px solid #a1d221;
-    color: #a1d221 !important;
+    border: 2px solid #88cf00;
+    color: #88cf00 !important;
     background-color: white !important; }
 .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 .fa {
     font-size: 1.7rem; }
@@ -46,9 +46,9 @@ margin-top: -22px;
         .steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
             width: 40px;
             height: 40px;
-            border: 2px solid #a1d221;
+            border: 2px solid #88cf00;
             background-color: white !important;
-            color: #a1d221 !important;
+            color: #88cf00 !important;
             border-radius: 50%;
             padding: 5px 11px 5px 9px;
             margin-top: -22px; }

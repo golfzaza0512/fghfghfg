@@ -1,12 +1,33 @@
-<div class="col-lg-12">
+<section id="tabs">
+  <div>
+    <h6 class="section-title">Order List</h6>
+  </div>
+  <nav mat-tab-nav-bar>
+    <div class="container-fluid">
+      <div class="row">
+        <a mat-tab-link class="col" routerLink="/orderList" [active]="url == '/orderList'">
+          สินค้ารอรับเข้า
+        </a>
+        <a mat-tab-link class="col" routerLink="/customerReceipts" [active]="url == '/customerReceipts'">
+          ลูกค้ารับสินค้า
+        </a>
+        <a mat-tab-link class="col" routerLink="/checkOrder" [active]="url == '/checkOrder'">
+          ตรวจสอบรายการ
+        </a>
+      </div>
+    </div>
+  </nav>
+
+</section>
+
+<div class="col-lg-11">
   <div>
     <div class="mx-auto col-lg-8 col-mg-8">
       <br>
-      <app-order-stepper></app-order-stepper>
+      
     </div>
     <div class="col-lg-11 col-xs-11 col-mg-11 mx-auto">
-        <router-outlet></router-outlet>
     </div>
   </div>
-  
 </div>
+<router-outlet></router-outlet>
