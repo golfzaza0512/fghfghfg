@@ -12,6 +12,10 @@ import { HttpModule } from "@angular/http";
 import { CheckOrderComponent } from './check-order/check-order.component';
 import { CustomerReceiptsComponent } from './customer-receipts/customer-receipts.component';
 // import { OrderStepperComponent } from "./order-stepper";
+import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule } from "@angular/forms";
+
+
 
 @NgModule({
   declarations: [
